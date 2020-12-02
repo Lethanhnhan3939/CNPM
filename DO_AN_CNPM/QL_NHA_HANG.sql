@@ -1,4 +1,5 @@
 ﻿use master
+drop database QL_NHA_HANG
 create database QL_NHA_HANG
 GO
 use QL_NHA_HANG
@@ -143,14 +144,14 @@ insert into MONAN(tenMonAn,donvitinh,loai,gia)
 
 
 insert into NHANVIEN(tenNV,sdt,ngaysinh,diachi,gioitinh,CMND,loaiNV,chucvu,luong,ngayvaolam) 
-	values  (N'Nguyễn Công Phú','0123456789','1999/02/19',N'102 Trần Hưng Đạo',0,'12345678',0,N'Phục vụ',20000,'2019/07/19'),
-			(N'Tran Cong Phu','0987654321','1997/01/04',N'111 Ly Thuong Kiet',0,'12045678',0,N'Thu ngân',25000,'2019/07/19'),
-			(N'Nguyen Nhu Nhut','0927345678','2000/10/1',N'731 Tran Hung Dao, Q5, TpHCM',0,'02045678',0,N'Phục vụ',18000,'2019/07/19'),
-			(N'Le Thi Phi Yen','0987567390','1990/4/26',N'23/5 Nguyen Trai, Q5, TpHCM',1,'92045678',1,N'Quản lý',5000000,'2019/07/19'),
+	values  (N'Nguyen Ho Phuong Nam','0123456789','1999/02/19',N'102 Trần Hưng Đạo',0,'12345678',0,N'Phục vụ',20000,'2019/07/19'),
+			(N'Doan Nhu Nhat Quyen','0987654321','1997/01/04',N'111 Ly Thuong Kiet',0,'12045678',0,N'Thu ngân',25000,'2019/07/19'),
+			(N'Hang Minh An','0927345678','2000/10/1',N'731 Tran Hung Dao, Q5, TpHCM',0,'02045678',0,N'Phục vụ',18000,'2019/07/19'),
+			(N'Le Thanh Nhan','0987567390','1990/4/26',N'23/5 Nguyen Trai, Q5, TpHCM',1,'92045678',1,N'Quản lý',5000000,'2019/07/19'),
 			(N'Nguyễn Trần Nhật','01235879','2000/11/2',N'235 Trường Sa',0,'32145687',0,N'Thu Ngân',25000,'2019/5/25'),
-			(N'Ngô Quốc Trọng','09535874','1997/2/8',N'545 Hoàng Sa',0,'312589722',0,N'Phục vụ',18000,'2/11/2019'),
-			(N'Lê Ngọc Thiên Nhã','01258749','2000/1/5',N'575 3/2',1,'312348759',0,N'Phục vụ',20000,'2019/3/11'),
-			(N'Nguyễn Lý Kiến Hoa','0759865248','1999/6/25',N'236 An Dương Vương',1,'312354879',0,N'Phục vụ',20000,'2019/6/3'),
+			(N'Nguyen Tien Thinh','09535874','1997/2/8',N'545 Hoàng Sa',0,'312589722',0,N'Phục vụ',18000,'2/11/2019'),
+			(N'Nguyen Phuoc Thinh','01258749','2000/1/5',N'575 3/2',1,'312348759',0,N'Phục vụ',20000,'2019/3/11'),
+			(N'Hoang Tat Toan','0759865248','1999/6/25',N'236 An Dương Vương',1,'312354879',0,N'Phục vụ',20000,'2019/6/3'),
 			(N'Trang Thái Hà Ngân','0895784596','1998/10/29',N'26 Ngô Quyền',1,'312349865',0,N'Phục vụ',20000,'2019/1/30'),
 			(N'Phạm Ái','090265987','2000/4/12',N'159 Lý Chính Thắng',1,'',0,N'Phục vụ',20000,'2019/3/22')
 
@@ -244,7 +245,7 @@ insert into CTPHIEUCHI(idPC,idNL,soluong)
 			(10,6,1)
 
 insert into ACCOUNT(username,pwd,permission_level) 
-	values	('nhan','123456',1)
+	values	('nhan','nhan',1)
 
 
 
