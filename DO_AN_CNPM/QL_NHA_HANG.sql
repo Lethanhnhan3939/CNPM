@@ -1,5 +1,4 @@
 ﻿use master
-drop database QL_NHA_HANG
 create database QL_NHA_HANG
 GO
 use QL_NHA_HANG
@@ -144,14 +143,14 @@ insert into MONAN(tenMonAn,donvitinh,loai,gia)
 
 
 insert into NHANVIEN(tenNV,sdt,ngaysinh,diachi,gioitinh,CMND,loaiNV,chucvu,luong,ngayvaolam) 
-	values  (N'Nguyen Ho Phuong Nam','0123456789','99/02/19',N'102 Trần Hưng Đạo',0,'12345678',0,N'Phục vụ',20000,'2020/07/19'),
-			(N'Doan Nhu Nhat Quyen','0987654321','1997/01/04',N'111 Ly Thuong Kiet',0,'12045678',0,N'Thu ngân',25000,'2019/07/19'),
-			(N'Hang Minh An','0927345678','2000/10/1',N'731 Tran Hung Dao, Q5, TpHCM',0,'02045678',0,N'Phục vụ',18000,'2019/07/19'),
-			(N'Le Thanh Nhan','0987567390','1990/4/26',N'23/5 Nguyen Trai, Q5, TpHCM',1,'92045678',1,N'Quản lý',5000000,'2019/07/19'),
+	values  (N'Nguyễn Công Phú','0123456789','1999/02/19',N'102 Trần Hưng Đạo',0,'12345678',0,N'Phục vụ',20000,'2019/07/19'),
+			(N'Tran Cong Phu','0987654321','1997/01/04',N'111 Ly Thuong Kiet',0,'12045678',0,N'Thu ngân',25000,'2019/07/19'),
+			(N'Nguyen Nhu Nhut','0927345678','2000/10/1',N'731 Tran Hung Dao, Q5, TpHCM',0,'02045678',0,N'Phục vụ',18000,'2019/07/19'),
+			(N'Le Thi Phi Yen','0987567390','1990/4/26',N'23/5 Nguyen Trai, Q5, TpHCM',1,'92045678',1,N'Quản lý',5000000,'2019/07/19'),
 			(N'Nguyễn Trần Nhật','01235879','2000/11/2',N'235 Trường Sa',0,'32145687',0,N'Thu Ngân',25000,'2019/5/25'),
-			(N'Nguyen Tien Thinh','09535874','1997/2/8',N'545 Hoàng Sa',0,'312589722',0,N'Phục vụ',18000,'2/11/2019'),
-			(N'Nguyen Phuoc Thinh','01258749','2000/1/5',N'575 3/2',1,'312348759',0,N'Phục vụ',20000,'2019/3/11'),
-			(N'Hoang Tat Toan','0759865248','1999/6/25',N'236 An Dương Vương',1,'312354879',0,N'Phục vụ',20000,'2019/6/3'),
+			(N'Ngô Quốc Trọng','09535874','1997/2/8',N'545 Hoàng Sa',0,'312589722',0,N'Phục vụ',18000,'2/11/2019'),
+			(N'Lê Ngọc Thiên Nhã','01258749','2000/1/5',N'575 3/2',1,'312348759',0,N'Phục vụ',20000,'2019/3/11'),
+			(N'Nguyễn Lý Kiến Hoa','0759865248','1999/6/25',N'236 An Dương Vương',1,'312354879',0,N'Phục vụ',20000,'2019/6/3'),
 			(N'Trang Thái Hà Ngân','0895784596','1998/10/29',N'26 Ngô Quyền',1,'312349865',0,N'Phục vụ',20000,'2019/1/30'),
 			(N'Phạm Ái','090265987','2000/4/12',N'159 Lý Chính Thắng',1,'',0,N'Phục vụ',20000,'2019/3/22')
 
@@ -207,28 +206,28 @@ insert into NGUYENLIEU(tenNL,gia,idNCC,donvitinh)
 			(N'dầu ăn',230000,2,N'Thùng')
 
 insert into PHIEUTHU(ngaythu,tongtien) 
-	values	('2020/09/09',245000),
-			('2020/09/10',345000),
-			('2020/09/15',145000),
-			('2020/09/19',205000),
-			('2020/09/07',145000),
-			('2020/09/08',145000),
-			('2020/09/13',145000),
-			('2020/09/17',500000),
-			('2020/09/20',345000),
-			('2020/09/21',245000)
+	values	('2019/09/09',245000),
+			('2019/09/10',345000),
+			('2019/09/15',145000),
+			('2019/09/19',205000),
+			('2019/09/07',145000),
+			('2019/09/08',145000),
+			('2019/09/13',145000),
+			('2019/09/17',500000),
+			('2019/09/20',345000),
+			('2019/09/21',245000)
 
 insert into PHIEUCHI(thoigian,tongtien,ghichu) 
-	values	('2020-09-09T07:07:00',445000,NULL),
-			('2020-09-09T07:35:01',1345000,NULL),
-			('2020-09-11T07:35:01',605000,NULL),
-			('2020-09-12T07:30:00',1220000,NULL),
-			('2020-09-13T07:30:00',350000,NULL),
-			('2020-09-14T07:05:00',910000,NULL),
-			('2020-09-15T07:15:00',400000,NULL),
-			('2020-09-16T07:20:00',845000,NULL),
-			('2020-09-17T07:10:00',310000,NULL),
-			('2020-09-18T07:02:00',75000,NULL)
+	values	('2019-09-09T07:07:00',445000,NULL),
+			('2019-09-09T07:35:01',1345000,NULL),
+			('2019-09-11T07:35:01',605000,NULL),
+			('2019-09-12T07:30:00',1220000,NULL),
+			('2019-09-13T07:30:00',350000,NULL),
+			('2019-09-14T07:05:00',910000,NULL),
+			('2019-09-15T07:15:00',400000,NULL),
+			('2019-09-16T07:20:00',845000,NULL),
+			('2019-09-17T07:10:00',310000,NULL),
+			('2019-09-18T07:02:00',75000,NULL)
 
 insert into CTPHIEUCHI(idPC,idNL,soluong) 
 	values	(1,4,5),
@@ -245,7 +244,7 @@ insert into CTPHIEUCHI(idPC,idNL,soluong)
 			(10,6,1)
 
 insert into ACCOUNT(username,pwd,permission_level) 
-	values	('nhan','nhan',1)
+	values	('nhan','123456',1)
 
 
 
@@ -257,13 +256,13 @@ select idMonAn,count(*) SL, rank () OVER (ORDER BY count(*) DESC) HẠNG from CT
 	where CT.idHD=HD.idHD AND CT.idMonAn IN (select idMonAn from MONAN) AND MONTH(HD.ngay)=10 GROUP BY idMonAn
 
 --XUẤT HD CỦA NGÀY CHỈ ĐỊNH
-select CAST(HD.ngay AS DATE) NGAY, SUM(HD.tongtien) DOANH_THU from HOADON HD WHERE CAST(HD.ngay AS DATE)='09-09-2020' GROUP BY HD.ngay
+select CAST(HD.ngay AS DATE) NGAY, SUM(HD.tongtien) DOANH_THU from HOADON HD WHERE CAST(HD.ngay AS DATE)='09-09-2019' GROUP BY HD.ngay
 
 --XUẤT TẤT CẢ NGÀY
 select CAST(HD.ngay AS DATE) NGAY, SUM(HD.tongtien) DOANH_THU from HOADON HD WHERE HD.ngay IN(SELECT ngay FROM HOADON) GROUP BY HD.ngay
 
 --xuất doanh thu từng tháng trong năm	
-select month(ngay),sum(tongtien) from HOADON where month(ngay) in (select month(ngay) from HOADON WHERE YEAR(NGAY)=2020) group by month(ngay)
+select month(ngay),sum(tongtien) from HOADON where month(ngay) in (select month(ngay) from HOADON WHERE YEAR(NGAY)=2019) group by month(ngay)
 
 CREATE PROCEDURE SelectAllCustomers @City nvarchar(30), @PostalCode nvarchar(10)
 AS
